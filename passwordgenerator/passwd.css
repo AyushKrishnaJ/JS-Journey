@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+body {
+    background-color: #6247AA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+* {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 400;
+}
+
+#passgen {
+    height: 180px;
+    width: 500px;
+    border: 5px solid #102B3F;
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #A06CD5;
+    color: #FFFFFF;
+}
+
+#passwd {
+    text-align: left;
+    width: 400px;
+    height: 30px;
+    border: 5px solid #102B3F;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+    display: flex;
+    background-color: #E2CFEA;
+}
+
+#genpass {
+    width: 320px;
+    display: flex;
+    align-items: center;
+    color: cadetblue;
+    font-family: 'Muli';
+    font-size: x-large;
+    font-weight: 900;
+    overflow: hidden;
+    word-wrap: break-word;
+}
+
+#result {
+    border-radius: 10px;
+    padding: 5px;
+    font-weight: 900;
+    outline: none;
+}
+
+#result:hover {
+    background-color: #069593;
+    border: 3px solid #034a49;
+}
+
+#setting {
+    text-align: left;
+}
+
+#length {
+    width: 40px;
+    border-radius: 20px;
+    
+}

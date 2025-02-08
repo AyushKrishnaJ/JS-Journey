@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>random Passwd generator</title>
+    <link rel="stylesheet" href="passwd.css">
+</head>
+<body>
+    <div id="passgen">
+        <div id="passwd">
+            <div id="genpass"> </div>
+            <button id="result" type="button" onclick="Generate()">Generate</button>
+        </div>
+        <div id="setting">
+            <input id="length" type="number" min="1" max="200" value="1"><label for="length"> Length of Password</label><br>
+            <input id="capital" type="checkbox"><label for="capital">Include Uppercase characters</label><br>
+            <input id="number" type="checkbox"><label for="number">Include Numbers</label><br>
+            <input id="symbol" type="checkbox"><label for="symbol">Include Symbol</label><br>
+        </div>
+    </div>
+    <script src="passwd.js"></script>
+</body>
+</html>
