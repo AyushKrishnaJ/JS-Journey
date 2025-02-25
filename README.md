@@ -5,4 +5,4 @@ learning JS throught these projects!
 - [Digital clock](https://ayushkrishnaj.github.io/JS-Journey/digitalclock/)<br>
 - [Stopwatch](https://ayushkrishnaj.github.io/JS-Journey/stopwatch/)<br>
 - [Password Generator](https://ayushkrishnaj.github.io/JS-Journey/passwordgenerator/)<br>
-- [Calculator] (https://ayushkrishnaj.github.io/JS-Journey/calculator/)
+- [Calculator](https://ayushkrishnaj.github.io/JS-Journey/calculator/)
