@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div id="container">
+        <div id="screen">
+            <div id="input"></div>
+            <div id="result"></div>
+        </div>
+
+        <div id="cmd">
+            <div id="ac" class="btn lgray">
+                <button type="button" onclick="ac()">AC</button>
+            </div>
+            <div id="percent" class="btn lgray">
+                <button type="button" onclick="percent()">%</button>
+            </div>
+            <div id="backspace" class="btn lgray">
+                <button type="button" onclick="backspace()"><i class="fa-solid fa-delete-left"></i></button>
+            </div>
+            <div id="divide" class="btn orange">
+                <button type="button" onclick="divide()">/</button>
+            </div>
+            <div id="seven" class="btn dgray">
+                <button type="button" onclick="seven()">7</button>
+            </div>
+            <div id="eight" class="btn dgray">
+                <button type="button" onclick="eight()">8</button>
+            </div>
+            <div id="nine" class="btn dgray">
+                <button type="button" onclick="nine()">9</button>
+            </div>
+            <div id="multiply" class="btn orange">
+                <button type="button" onclick="multiply()">x</button>
+            </div>
+            <div id="four" class="btn dgray">
+                <button type="button" onclick="four()">4</button>
+            </div>
+            <div id="five" class="btn dgray">
+                <button type="button" onclick="five()">5</button>
+            </div>
+            <div id="six" class="btn dgray">
+                <button type="button" onclick="six()">6</button>
+            </div>
+            <div id="subtract" class="btn orange">
+                <button type="button" onclick="subtract()">-</button>
+            </div>
+            <div id="one" class="btn dgray">
+                <button type="button" onclick="one()">1</button>
+            </div>
+            <div id="two" class="btn dgray">
+                <button type="button" onclick="two()">2</button>
+            </div>
+            <div id="three" class="btn dgray">
+                <button type="button" onclick="three()">3</button>
+            </div>
+            <div id="add" class="btn orange">
+                <button type="button" onclick="add()">+</button>
+            </div>
+            <div id="zero" class="btn dgray">
+                <button type="button" onclick="zero()">0</button>
+            </div>
+            <div id="point" class="btn dgray">
+                <button type="button" onclick="point()">.</button>
+            </div>
+            <div id="equal" class="btn orange">
+                <button type="button" onclick="equal()">=</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
