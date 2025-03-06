@@ -112,10 +112,23 @@ function point() {
 
 function equal() {
     try {
-        let evaluatedResult = eval(inputstr).toFixed(6);
+        let evaluatedResult = eval(inputstr);
+        console.log(evaluatedResult);
+        console.log(evaluatedResult % 1);
+        console.log(evaluatedResult % 1 !== 0);
+        if (evaluatedResult % 1 !== 0) {
+            evaluatedResult = evaluatedResult.toFixed(6);
+        }
         result.textContent = evaluatedResult;
     } catch (error) {
         result.textContent = "Error";
         console.error("Evaluation error:", error);
     }
 }
+
+const btns = document.querySelectorAll(".btn");
+btns.forEach(btn => {
+    btn.addEventListener("click", () => {
+        document.getElementById("input").scrollLeft += 100;
+    })
+})
