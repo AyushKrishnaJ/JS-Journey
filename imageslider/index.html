@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Slider</title> 
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="flex">
+    <div id="entire" class="flex">
+        <div id="leftbtn">
+            <img src="./image/back-arrow.png" style="object-fit: cover; height: 100%; width: 100%; filter: invert();">
+        </div>
+        <div id="main" class="flex">
+            <div id="logoname"></div>
+            <div id="container">
+                <img src="./image/Bugatti.jpg" style="object-fit: cover; height: 100%; width: 100%;">
+                <img src="./image/Ferrari.jpg" style="object-fit: cover; height: 100%; width: 100%;">
+                <img src="./image/Koenigsegg.jpg" style="object-fit: cover; height: 100%; width: 100%;">
+                <img src="./image/Lamborghini.jpg" style="object-fit: cover; height: 100%; width: 100%;">
+            </div>
+            <div id="minibtn" class="flex">
+                <div class="button"></div>
+                <div class="button"></div>
+                <div class="button"></div>
+                <div class="button"></div>
+            </div>
+        </div>
+        <div id="rightbtn">
+            <img src="./image/back-arrow.png" style="object-fit: cover; height: 100%; width: 100%; transform: scale(-1); filter: invert();">
+        </div> 
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
