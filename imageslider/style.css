@@ -13,15 +13,32 @@
 body {
     height: 100vh;
     background-image: linear-gradient(to right top, #5da9e9, #4b95d9, #3980c9, #286db9, #1859a8, #1859a8, #1859a8, #1859a8, #286db9, #3980c9, #4b95d9, #5da9e9);
+    font-size: 1rem;
+    color: rgb(141, 174, 177);
+}
+
+#textwall {
+    position: absolute;
+    z-index: -1;
+    width: 100vw;
+    height: 100vh;
+    font-family: monospace;
+    color: rgba(255, 255, 255, 0.4); 
+    font-size: 0.8rem;
+    overflow: none;
+    text-align: justify;
+    transition: 1s linear;
 }
 
 #entire {
     width: 1100px;
     height: 700px; 
+    position: absolute;
 }
 
 #leftbtn, #rightbtn {
     height: 150px;
+    cursor: pointer;
 }
 
 #main {
@@ -34,18 +51,37 @@ body {
     width: 800px;
     height: 100px;
     gap: 35px;
+    text-align: center;
+    font-size: 5rem;
+    letter-spacing: 8px;
+    color: #eef4ed;
+    transition: 0.5s ease-in-out;
+    background-color: transparent;
+    font-weight: 900;
 }
 
-#container {
-    width: 800px;
+.frame {
+    width: 750px;
     height: 500px;
-    overflow: auto;
-    box-shadow: 0px 0px 15px 5px;
+    overflow: hidden;
+    box-shadow: 0px 0px 15px 5px black;
+}
+
+.slider {
+    display: flex;
+    transition: 1.2s ease-in-out;
+}
+
+.image {
+    width: 750px;
+    height: 500px;
+    object-fit: fill;
 }
 
 .button {
-    width: 15px;
-    height: 15px;
+    width: 20px;
+    height: 20px;
     border-radius: 50%;
-    border: 3px solid white;
+    border: 2px solid white;
+    cursor: pointer;
 }
