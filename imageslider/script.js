@@ -5,6 +5,7 @@ const logoname = document.getElementById("logoname");
 const image = document.querySelectorAll(".image");
 const textWall = document.getElementById("textwall");
 
+console.log(image);
 // creating an array which has names of the company of the cars
 let carName = Array.from(image).map(element => element.src.slice(60,-4).toUpperCase());
 carName.forEach((item, index, arr) => {
@@ -20,6 +21,8 @@ carNameWithHyphen.forEach((item, index, arr) => {
     arr[index] = arr[index].replaceAll("%20", " ").replaceAll("/", " ");
 })
 
+console.log(carName);
+console.log(carNameWithHyphen);
 // controls the next / previous mechanism of image slider
 let slideNumber = 0;
 let prevSlideNumber = 0;
@@ -38,7 +41,6 @@ logoname.textContent = `${carName[slideNumber]}`;
 
 // background creating algorithm
 let repeatedText = 'BUGATTI VEYRON - '.repeat(10000).trim();
-console.log(repeatedText);
 textWall.textContent = `${repeatedText}`;
 
 // function which updates company name after each change
