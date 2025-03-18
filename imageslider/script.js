@@ -10,14 +10,14 @@ let carName = Array.from(image).map(element => element.src.slice(60,-4).toUpperC
 carName.forEach((item, index, arr) => {
     const hyphenIndex = item.indexOf("-");
     arr[index] = hyphenIndex !== -1 ? item.slice(0, hyphenIndex) : item; 
-    arr[index] = arr[index].replaceAll("%20", " ");
+    arr[index] = arr[index].replaceAll("%20", " ").replaceAll("/", " ");
 });
 
 // creating an array which has full name of the cars
 let carNameWithHyphen = Array.from(image).map(element => element.src.slice(60,-4).toUpperCase());
 carNameWithHyphen.forEach((item, index, arr) => {
     arr[index] = item.replaceAll("-", " ");
-    arr[index] = arr[index].replaceAll("%20", " ");
+    arr[index] = arr[index].replaceAll("%20", " ").replaceAll("/", " ");
 })
 
 // controls the next / previous mechanism of image slider
