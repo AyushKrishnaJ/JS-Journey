@@ -48,7 +48,7 @@ function updateName () {
     logoname.style.transform += `translateY(100px)`;
     buttons[prevSlideNumber].style.backgroundColor = "transparent";
     prevSlideNumber = slideNumber;
-    textWall.style.color = `rgba(255, 255, 255, 0.001)`
+    textWall.style.color = `rgba(255, 255, 255, 0)`
     setTimeout(() => {
         logoname.textContent = `${carName[slideNumber]}`;
         logoname.style.transform += `translateY(-100px)`;
@@ -59,8 +59,16 @@ function updateName () {
     }, 800);
 }
 
+let clickable = true;
 // left moving mechanism
 left.addEventListener("click", () => {
+    if (!clickable)
+            return;
+    
+    clickable = false;
+    setTimeout(() => {
+        clickable = true;
+    }, 1000);
     if (slideNumber === 0) {
         slider.style.transform = `translateX(${-750 * (image.length-1)}px)`;
         slideNumber = image.length-1;
@@ -74,6 +82,13 @@ left.addEventListener("click", () => {
 
 // right moving mechanism
 right.addEventListener("click", () => {
+        if (!clickable)
+            return;
+    
+    clickable = false;
+    setTimeout(() => {
+        clickable = true;
+    }, 1000);
     slideNumber = (slideNumber + 1) % image.length;
     slider.style.transform = `translateX(-${slideNumber * 750}px)`;
     updateName();
